@@ -1,9 +1,3 @@
-<p>Today
-
-
-
-<% day = Date.today.strftime("%A")%>
-<%month_day = Date.today.strftime("%B %d")%>
-<%year = Date.today.strftime("%Y")%>
-<%=The date is "#{day}, #{month_day}, #{year}"%>
-</p>
+<h1>Today</h1>
+    <p>The date is <%= Time.now.strftime("%A, %B %d, %Y") %></p>
+  </body>
